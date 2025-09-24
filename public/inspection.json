@@ -1,0 +1,80 @@
+[
+  {
+    "id": "67f9540009889f1437009344",
+    "request_no": "RRIN-2025-0002",
+    "location": "MHPC",
+    "scope_of_work": ["Coating Chemical", "Storage Compound", "Inspection"],
+    "type": "Return Inspection",
+    "date_submitted": "03 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0002",
+    "third_party": "NOV Middle East Oil and Gas Wells Equipments and Devices L.L.C",
+    "third_party_badge": 3,
+    "status": "Open"
+  },
+  {
+    "id": "67f9540009889f1437009345",
+    "request_no": "RRIN-2025-0003",
+    "location": "Jakarta Yard",
+    "scope_of_work": ["Testing", "TPI Survellience", "Stenciling & Marking"],
+    "type": "New Arrival",
+    "date_submitted": "05 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0002",
+    "third_party": "PT Santosa",
+    "third_party_badge": 2,
+    "status": "For Review"
+  },
+  {
+    "id": "67f9540009889f1437009346",
+    "request_no": "RRIN-2025-0004",
+    "location": "Batam Yard",
+    "scope_of_work": ["Refurbish", "Inspection"],
+    "type": "Maintenance",
+    "date_submitted": "06 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0003",
+    "third_party": "PT Pertamina",
+    "third_party_badge": 1,
+    "status": "Completed"
+  },
+  {
+    "id": "67f9540009889f1437009347",
+    "request_no": "RRIN-2025-0005",
+    "location": "Surabaya Yard",
+    "scope_of_work": ["Visual Check", "Testing"],
+    "type": "Return Inspection",
+    "date_submitted": "07 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0004",
+    "third_party": "Halliburton Indonesia",
+    "third_party_badge": 4,
+    "status": "Open"
+  },
+  {
+    "id": "67f9540009889f1437009348",
+    "request_no": "RRIN-2025-0006",
+    "location": "MHPC",
+    "scope_of_work": ["Inspection", "Storage Compound"],
+    "type": "On Spot",
+    "date_submitted": "08 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0005",
+    "third_party": "Schlumberger Indonesia",
+    "third_party_badge": 2,
+    "status": "For Review"
+  },
+  {
+    "id": "67f9540009889f1437009349",
+    "request_no": "RRIN-2025-0007",
+    "location": "Balikpapan Yard",
+    "scope_of_work": ["Coating Chemical", "Visual Body", "Full Length Drift"],
+    "type": "New Arrival",
+    "date_submitted": "09 Jan 25",
+    "eco": "-",
+    "related_to": "RRIN-2025-0006",
+    "third_party": "PT Elnusa",
+    "third_party_badge": 3,
+    "status": "Completed"
+  }
+]

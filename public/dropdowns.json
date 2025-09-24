@@ -1,0 +1,8 @@
+{
+  "service_type": ["New Arrival", "Maintenance", "On Spot"],
+  "scope_templates": ["ADNOC Requirements"],
+  "lot": ["PO-2024-00457-A-RR"],
+  "allocation": ["Unallocated"],
+  "owner": ["OFFSHORE"],
+  "condition": ["good"]
+}
