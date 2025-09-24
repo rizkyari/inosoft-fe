@@ -4,11 +4,11 @@
     </span>
 </template>
 
-<script>
-export default {
-    name: 'UiBadge',
-    props: {
-        variant: { type: String, default: 'secondary'}
+<script setup>
+defineProps({
+    variant: {
+        type: String,
+        required: true
     }
-}
+})
 </script>
