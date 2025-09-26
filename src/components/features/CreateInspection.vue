@@ -12,7 +12,7 @@
         <div class="d-flex gap-2 mt-3 justify-content-end">
             <button class="btn btn-sm">Cancel</button>
             <button class="btn btn-outline-secondary btn-sm" @click="triggerDraft">Save as Draft</button>
-            <button class="btn btn-primary btn-sm" @click="triggerSubmit">Submit</button>
+            <button class="btn btn-tosca text-white btn-sm" @click="triggerSubmit">Submit</button>
         </div>
     </div>
 </template>

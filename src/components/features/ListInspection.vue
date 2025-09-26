@@ -28,7 +28,7 @@
             >
                 <div class="d-flex">
                     <div class="toast-body">
-                        New inspection has been successfully created 🚀
+                        New inspection has been successfully created
                     </div>
                     <button
                     type="button"
