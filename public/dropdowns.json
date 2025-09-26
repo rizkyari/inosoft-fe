@@ -1,8 +1,8 @@
 {
   "service_type": ["New Arrival", "Maintenance", "On Spot"],
-  "scope_templates": ["ADNOC Requirements"],
-  "lot": ["PO-2024-00457-A-RR"],
-  "allocation": ["Unallocated"],
-  "owner": ["OFFSHORE"],
-  "condition": ["good"]
+  "scope_templates": ["ADNOC Requirements", "Visual Inspection", "Full Service"],
+  "locations": ["Moomba", "Surabaya Yard", "MHPC"],
+  "related_to": ["CO-02023-001", "CO-02023-002"],
+  "customers": ["PT. Pertamina", "Total Energies", "Chevron Indonesia"],
+  "statuses": ["Open","For Review","Completed","Draft"]
 }

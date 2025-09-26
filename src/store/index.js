@@ -18,6 +18,9 @@ export default createStore({
         },
         setDropdowns(state, data) {
             state.dropdowns = data || {}
+        },
+        addInspection(state, data) {
+            state.inspections.unshift(data)
         }
     },
     actions: {
@@ -37,6 +40,13 @@ export default createStore({
             } catch (error) {
                 console.error(error)
                 commit('setDropdowns', {})
+            }
+        },
+        async createInspection({commit}, payload) {
+            try {
+                commit('addInspection', payload)
+            } catch (error) {
+                console.error(error);
             }
         }
     },

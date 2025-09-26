@@ -31,7 +31,7 @@
         </div>
 
         <div class="d-flex justify-content-end my-4">
-            <button class="btn btn-tosca text-white">+ Create Request</button>
+            <button class="btn btn-tosca text-white" @click="goToCreate">+ Create Request</button>
         </div>
         <div class="table-responsive ">
             <table class="table align-middle">
@@ -186,7 +186,10 @@
 </template>
 
 <script setup>
-import { ref, watch, computed} from 'vue'
+import { ref, watch} from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const props = defineProps({
     rows: { type: Array, default: () => [] },
@@ -213,6 +216,10 @@ const keywordLocal = ref(props.keyword)
 const expanded = ref(null)
 function toggleExpand(id) {
     expanded.value = expanded.value === id ? null : id
+}
+
+function goToCreate(){
+    router.push(`/inspections/new`)
 }
 
 watch(() => props.keyword, (val) => {

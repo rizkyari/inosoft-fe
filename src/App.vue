@@ -1,10 +1,16 @@
 <script setup>
-import ListInspection from './components/features/ListInspection.vue';
+import { onMounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
+onMounted(async() => {
+  await store.dispatch('fetchDropdowns')
+})
 </script>
 
 <template>
   <div>
-    <list-inspection/>
+    <router-view/>
   </div>
 </template>
 

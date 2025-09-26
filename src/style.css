@@ -87,3 +87,9 @@ body {
 .breadcrumb .breadcrumb-item a{ color:#3d8db3; text-decoration:none }
 .breadcrumb .breadcrumb-item a:hover{ text-decoration:underline }
 .breadcrumb .breadcrumb-item.active{ color:#5b6a73 }
+
+
+.my-custom-switch:checked {
+      background-color: green; /* Background color of the switch track */
+      border-color: darkgreen; /* Border color of the switch track */
+    }

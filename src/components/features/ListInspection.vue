@@ -18,6 +18,27 @@
             @sort="onSort"
             />
         </section>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div
+            id="successToast"
+            class="toast align-items-center text-bg-success border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            >
+                <div class="d-flex">
+                    <div class="toast-body">
+                        New inspection has been successfully created 🚀
+                    </div>
+                    <button
+                    type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                    ></button>
+                </div>
+            </div>
+        </div>
     </div>
     
 </template>
@@ -25,12 +46,14 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
+import { useRoute } from 'vue-router'
+import { Toast } from 'bootstrap'
 import InspectionTable from '../organism/InspectionTable.vue'
 import Breadcrumb from '../atoms/Breadcrumb.vue'
 import { sortRows } from '../../utils/helper'
 
 const store = useStore()
-
+const route = useRoute()
 const loading = ref(true)
 const activeTab = ref('open')
 const keyword = ref('')
@@ -106,4 +129,13 @@ onMounted(async () => {
     }
 })
 
+onMounted(() => {
+  if (route.query.created === '1') {
+    const toastEl = document.getElementById('successToast')
+    if (toastEl) {
+      const toast = new Toast(toastEl)
+      toast.show()
+    }
+  }
+})
 </script>
