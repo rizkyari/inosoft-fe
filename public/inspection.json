@@ -10,7 +10,10 @@
     "related_to": "RRIN-2025-0002",
     "third_party": "NOV Middle East Oil and Gas Wells Equipments and Devices L.L.C",
     "third_party_badge": 3,
-    "status": "Open"
+    "status": "Open",
+    "items": [
+      { "description": "5 1/2\", 17 PPF, ... R3", "ownership": "PT. Santosa", "lot": "MMT30624701", "qty": 3, "progress": 0 }
+    ]
   },
   {
     "id": "67f9540009889f1437009345",
