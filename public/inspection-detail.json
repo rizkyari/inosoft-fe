@@ -1,0 +1,64 @@
+{
+  "id": "67f9540009889f1437009344",
+  "request_no": "RRIN-2025-0002",
+  "location": "MHPC",
+  "scope_of_work": ["Coating Chemical", "Storage Compound", "Inspection"],
+  "type": "Return Inspection",
+  "date_submitted": "03 Jan 25",
+  "eco": "-",
+  "related_to": "RRIN-2025-0002",
+  "third_party": "NOV Middle East Oil and Gas Wells Equipments and Devices L.L.C",
+  "third_party_badge": 3,
+  "status": "Completed",
+
+  "customer_name": "PT Santosa",
+  "charge_customer": true,
+  "dc_code": "1100049832",
+
+  "scope_of_work_details": [
+    {
+      "template": "ADNOC Requirements",
+      "works": [
+        { "name": "Visual Thread", "description": "Thread profile visual check." },
+        { "name": "Visual Body", "description": "Pipe body visual inspection." },
+        { "name": "Full Length Drift", "description": "Full length drift per spec." }
+      ]
+    }
+  ],
+
+  "order_information": [
+    {
+      "id_item": "62972983244a9372244224ff",
+      "item_code": "ITM001278",
+      "item_desc": "Casing 13 3/8\", 68 PPF, L80, JFELION, R3, Coated",
+      "lot": "PO-2024-00457-A-RR",
+      "allocation": "Unallocated",
+      "owner": "OFFSHORE",
+      "condition": "Good",
+      "requested_qty": 1900,
+      "avail_qty": 127.89,
+      "pending_qty": 1800,
+      "completed_qty": 100,
+      "progress_pct": 92.86
+    },
+    {
+      "id_item": "62972983244a9372244224aa",
+      "item_code": "ITM001279",
+      "item_desc": "Casing 9 5/8\", 53.5 PPF, P110, BTC, R3",
+      "lot": "PO-2024-00458-B-RR",
+      "allocation": "Unallocated",
+      "owner": "PT Santosa",
+      "condition": "Quarantine",
+      "requested_qty": 1900,
+      "avail_qty": 127.89,
+      "pending_qty": 1700,
+      "completed_qty": 200,
+      "progress_pct": 89.47
+    }
+  ],
+
+  "charges_to_customer": [
+    { "order_no": "OD-001", "service_desc": "SERV-001 Inspection",  "qty": 5, "unit_price": 55, "total": 275 },
+    { "order_no": "OD-002", "service_desc": "SERV-002 Inspection",  "qty": 5, "unit_price": 55, "total": 275 }
+  ]
+}

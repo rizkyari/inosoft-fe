@@ -90,6 +90,20 @@ body {
 
 
 .my-custom-switch:checked {
-      background-color: green; /* Background color of the switch track */
-      border-color: darkgreen; /* Border color of the switch track */
-    }
+    background-color: green;
+    border-color: darkgreen;
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #app {
+    padding: 0.5rem;
+    margin: 0.25rem auto;
+  }
+}
