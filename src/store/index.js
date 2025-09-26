@@ -10,7 +10,8 @@ function toArray(payload) {
 export default createStore({
     state: {
         inspections: [],
-        dropdowns: {}
+        dropdowns: {},
+        detail: null,
     },
     mutations: {
         setInspections(state, data) {
@@ -21,6 +22,9 @@ export default createStore({
         },
         addInspection(state, data) {
             state.inspections.unshift(data)
+        },
+        setDetail(state, data) {
+            state.detail = data
         }
     },
     actions: {
@@ -48,10 +52,20 @@ export default createStore({
             } catch (error) {
                 console.error(error);
             }
+        },
+        async fetchDetail({commit}, id) {
+            try {
+                const res = await axios.get(`/inspection-detail.json`)
+                commit('setDetail', res.data)
+            } catch (error) {
+                console.error(error)
+                commit('setDetail', null)
+            }
         }
     },
     getters: {
         getInspections: (state) => state.inspections,
         getDropdowns: (state) => state.dropdowns,
+        getDetail: (state) => state.detail,
     }
 })

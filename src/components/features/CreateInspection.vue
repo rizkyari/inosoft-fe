@@ -35,7 +35,11 @@ async function triggerSubmit() {
     if (!ok) return
     const payload = f.buildPayload()
     await store.dispatch('createInspection', payload)
-    router.push({ path: '/inspections', query: { created: '1' } })
+    router.push({
+        name: 'InspectionDetail',
+        params: { id: payload.id },
+        query: { created: '1' }
+    })
 }
 
 function triggerDraft() {
